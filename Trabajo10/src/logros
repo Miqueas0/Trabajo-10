@@ -1,0 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Logros from './Logros';
+
+const App = () => {
+  const susLogros = [
+    'Distinguido por el premio AM turing por la invención, estandarización y comercialización del Ethernet',
+    'Medalla de Honor del instituto de eletronica e ingenieros electronicos de Estados Unidos de Norteamerica',
+    'Elegido por la Academia Nacional de Ingeniería',
+  ];
+
+  return (
+    <div>
+      <Logros achievements={susLogros} />
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
